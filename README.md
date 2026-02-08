@@ -10,7 +10,7 @@ I chose to replicate this work because I was fascinated by the idea of achieving
 
 The original paper can be found [here](https://arxiv.org/abs/2407.15549). 
 
-### **Technical Deep-Dive**
+### **Technical Implementation**
 
 My implementation involved building the core LAT loop from scratch. The bulk of the implementation can be found in the notebooks folder in 02_replication.ipynb. 
 
@@ -42,4 +42,5 @@ In order to satisfy the compute requirements of training a large model, I did th
 
 * **Hyperparameter Fragility:** The perturbation bound  is a double-edged sword; a bound too large destroys model utility, while too little fails to effect the weights.
 * **Negative Result:** My audit showed that while the model is robust to direct harmful requests, it remained susceptible to more complex jailbreaks, suggesting that the training was not enough capture all semantic directions of attack.
+
 
